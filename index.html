@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Купон на одно желание</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .coupon {
+            background-color: #f9f9f9;
+            border: 2px solid #ffcc00;
+            border-radius: 20px;
+            padding: 30px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+        .coupon h2 {
+            color: #333333;
+            font-size: 28px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+        }
+        .coupon p {
+            color: #666666;
+            font-size: 18px;
+            margin-bottom: 30px;
+            line-height: 1.5;
+        }
+        .coupon button {
+            background-color: #ffcc00;
+            border: none;
+            color: #ffffff;
+            padding: 15px 30px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 20px;
+            border-radius: 30px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        .coupon button:hover {
+            background-color: #ffdd44;
+        }
+        /* Full screen modal */
+        .fullscreen-modal {
+            display: none;
+            position: fixed;
+            z-index: 9999;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.7);
+        }
+        .fullscreen-modal img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80%;
+            max-width: 600px;
+        }
+        .fullscreen-modal p {
+            position: absolute;
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<div class="coupon">
+    <h2>Специальное предложение!</h2>
+    <p>Используйте этот купон, чтобы осуществить свое самое заветное желание!</p>
+    <button onclick="showFullScreenModal()">Использовать купон</button>
+</div>
+
+<!-- Full screen modal -->
+<div class="fullscreen-modal" id="fullscreenModal">
+    <div class="tenor-gif-embed" data-postid="14463173" data-share-method="host" data-aspect-ratio="1" data-width="100%"><a href="https://tenor.com/view/diwali-sparkles-stars-confetti-celebrate-fireworks-gif-14463173">Diwali Firecrackers Burst And Sparkle Sticker</a>from <a href="https://tenor.com/search/diwali+sparkles-stickers">Diwali Sparkles Stickers</a></div> <script type="text/javascript" async src="https://tenor.com/embed.js"></script>
+    <p>Отправьте скриншот Хаметову Артёму Максимовичу</p>
+</div>
+
+<script>
+    function showFullScreenModal() {
+        var modal = document.getElementById('fullscreenModal');
+        modal.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
